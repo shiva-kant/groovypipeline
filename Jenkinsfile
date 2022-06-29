@@ -4,7 +4,7 @@ pipeline {
         stage('seq') {
             
             steps {
-               def result="cg/projecta/hello.groovy"
+               def result= load "cg/projecta/hello.groovy"
                 print hello.sayHello();
             }
         }
