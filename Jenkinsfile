@@ -4,7 +4,8 @@ pipeline {
         stage('seq') {
             
             steps {
-                zip 'abc.zip'
+               def result="cg/projecta/hello.groovy"
+                print hello.sayHello();
             }
         }
         }
