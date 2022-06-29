@@ -5,7 +5,7 @@ pipeline {
             
             steps {
                def result= load "cg/projecta/hello.groovy"
-                print hello.sayHello();
+                print result.sayHello();
             }
         }
         }
