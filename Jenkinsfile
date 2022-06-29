@@ -1,10 +1,16 @@
+String sayHello()
+{
+  
+  return "Hello World";
+}
+
 pipeline {
     agent any
     stages {
         stage('seq') {
            steps {
-               def result=load("cg/projecta/hello.groovy");
-                print result.sayHello();
+              
+                print sayHello();
             }
         }
         }
