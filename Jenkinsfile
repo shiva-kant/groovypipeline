@@ -6,7 +6,7 @@ pipeline {
         stage('seq') {
            steps {
               def i1=load "hello.groovy";
-                print i1.sayHello();
+                print i1.sayHello()
             }
         }
         }
